@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="6.0">
+  <display-name>StudentPortal</display-name>
+  <!-- folder shared with the PHP app, where files are stored -->
+  <context-param><param-name>uploadDir</param-name>
+    <param-value>C:/xampp/htdocs/student-portal/php/uploads/</param-value></context-param>
+  <context-param><param-name>dbUrl</param-name>
+    <param-value>jdbc:mysql://localhost:3306/student_portal</param-value></context-param>
+  <context-param><param-name>dbUser</param-name><param-value>root</param-value></context-param>
+  <context-param><param-name>dbPass</param-name><param-value></param-value></context-param>
+  <welcome-file-list><welcome-file>login.jsp</welcome-file></welcome-file-list>
+</web-app>

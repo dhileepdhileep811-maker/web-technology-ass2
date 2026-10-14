@@ -1,0 +1,19 @@
+:root { --primary:#1f4e9c; --bad:#c62828; --good:#2e7d32; }
+* { box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+body { margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+       background:linear-gradient(135deg,#e3ecfa,#f7f9fc); padding:16px; }
+.card { background:#fff; width:100%; max-width:480px; padding:28px; border-radius:12px;
+        box-shadow:0 8px 24px rgba(0,0,0,.12); }
+h1 { margin:0 0 20px; font-size:1.4rem; color:var(--primary); text-align:center; }
+.field { margin-bottom:16px; }
+label { display:block; font-weight:600; margin-bottom:6px; font-size:.9rem; }
+input, select { width:100%; padding:10px; border:1.5px solid #bbb; border-radius:6px; font-size:1rem; }
+input:focus, select:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(31,78,156,.15); }
+.field.invalid input, .field.invalid select { border-color:var(--bad); }
+.field.valid input, .field.valid select { border-color:var(--good); }
+.error { display:block; min-height:1em; color:var(--bad); font-size:.8rem; margin-top:4px; }
+meter { width:100%; height:8px; margin-top:6px; }
+button { width:100%; padding:12px; border:0; border-radius:6px; background:var(--primary);
+         color:#fff; font-size:1rem; cursor:pointer; transition:background .2s; }
+button:hover { background:#163a75; }
+@media (max-width:480px) { .card { padding:18px; } h1 { font-size:1.15rem; } }
